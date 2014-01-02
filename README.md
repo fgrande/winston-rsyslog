@@ -26,36 +26,36 @@ The Rsyslog transport takes the following options:
 Through __facility__ parameter, You'll be able to use the right log file on rsyslog:
 
 ```
-__0__  kernel messages
-__1__  user-level messages
-__2__  mail system
-__3__  system daemons
-__4__  security/authorization messages
-__5__  messages generated internally by syslogd
-__6__  line printer subsystem
-__7__  network news subsystem
-__8__  UUCP subsystem
-__9__  clock daemon
-__10__ security/authorization messages
-__11__ FTP daemon
-__12__ NTP subsystem
-__13__ log audit
-__14__ log alert
-__15__ clock daemon (note 2)
-__16__ local use 0 (local0)
-__17__ local use 1 (local1)
-__18__ local use 2 (local2)
-__19__ local use 3 (local3)
-__20__ local use 4 (local4)
-__21__ local use 5 (local5)
-__22__ local use 6 (local6)
-__23__ local use 7 (local7)
+0 :  kernel messages
+1 :  user-level messages
+2 :  mail system
+3 :  system daemons
+4 :  security/authorization messages
+5 :  messages generated internally by syslogd
+6 :  line printer subsystem
+7 :  network news subsystem
+8 :  UUCP subsystem
+9 :  clock daemon
+10 : security/authorization messages
+11 : FTP daemon
+12 : NTP subsystem
+13 : log audit
+14 : log alert
+15 : clock daemon (note 2)
+16 : local use 0 (local0)
+17 : local use 1 (local1)
+18 : local use 2 (local2)
+19 : local use 3 (local3)
+20 : local use 4 (local4)
+21 : local use 5 (local5)
+22 : local use 6 (local6)
+23 : local use 7 (local7)
 ```
 
 ## Enabling rsyslog
 To let rsyslog receive data through UDP port, You should change its configuration (tipically located in /etc/rsyslog.conf), enabling the following tags:
 
-```
+``` bash
 $ModLoad imudp
 $UDPServerRun 514
 ```
@@ -64,7 +64,7 @@ The first tag enable UDP reception, while the second one define the listening po
 
 To enable TCP reception on port 10514 (as an example) :
 
-```
+``` bash
 $ModLoad imtcp
 $InputTCPServerRun 10514
 ```
