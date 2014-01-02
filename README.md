@@ -25,6 +25,7 @@ The Rsyslog transport takes the following options:
 
 Through __facility__ parameter, You'll be able to use the right log file on rsyslog:
 
+```
 __0__  kernel messages
 __1__  user-level messages
 __2__  mail system
@@ -49,20 +50,24 @@ __20__ local use 4 (local4)
 __21__ local use 5 (local5)
 __22__ local use 6 (local6)
 __23__ local use 7 (local7)
-
+```
 
 ## Enabling rsyslog
 To let rsyslog receive data through UDP port, You should change its configuration (tipically located in /etc/rsyslog.conf), enabling the following tags:
 
+```
 $ModLoad imudp
 $UDPServerRun 514
+```
 
 The first tag enable UDP reception, while the second one define the listening port.
 
 To enable TCP reception on port 10514 (as an example) :
 
+```
 $ModLoad imtcp
 $InputTCPServerRun 10514
+```
 
 ## Motivation
 Just for fun, while learning NodeJS.
@@ -94,7 +99,8 @@ If no test/config.json file is found, defaults will be used.
       "rsyslog": {
         "host": "localhost",
         "port": "514",
-        "facility": "0"
+        "facility": "0",
+        "protocol": "U"
       }
     } 
   }
@@ -106,7 +112,7 @@ Then you can run tests with [npm][4]:
   npm test
 ```
 
-#### Author: [Fabio Grande] (http://www.softwareontheroad.it)
+#### Author: [Fabio Grande] (http://about.me/fgrande)
 #### License: MIT
 
 [0]: http://en.wikipedia.org/wiki/Rsyslog
