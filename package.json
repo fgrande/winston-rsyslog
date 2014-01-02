@@ -1,0 +1,23 @@
+{
+  "name": "winston-rsyslog",
+  "version": "1.0.1",
+  "description": "A. rSysLog transport for winston",
+  "author": "Fabio Grande <grnfba@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/fgrande/winston-rsyslog.git"
+  },
+  "keywords": ["logging", "sysadmin", "tools"],
+  "dependencies": {
+  },
+  "peerDependencies": {
+    "winston": "~0.7.2"
+  },
+  "devDependencies": {
+    "winston": "0.7.x",
+    "vows": "0.7.x"
+  },
+  "main": "./lib/winston-rsyslog",
+  "scripts": { "test": "vows --spec" },
+  "engines": { "node": ">= 0.4.0" }
+}
