@@ -1,8 +1,18 @@
 {
   "name": "winston-rsyslog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An rSysLog transport for winston",
   "author": "Fabio Grande <grnfba@gmail.com>",
+  "contributors": [
+    {
+      "name": "Fabio Grande",
+      "email": "grnfba@gmail.com"
+    },
+    {
+      "name": "Derek Brooks",
+      "email": "derek@broox.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "http://github.com/fgrande/winston-rsyslog.git"
