@@ -22,6 +22,8 @@ The Rsyslog transport takes the following options:
 * __port:__ RSysLog Port (default : 514)
 * __facility:__ Facility index (default 0, valid values are from 0 to 23)
 * __protocol:__ TCP or UDP (values can be "U" or "T", default is "U")
+* __hostname:__ The hostname the application is running at (default is the current hostname)
+* __tag:__ A tag to name the application for easy log filtering (default is 'winston')
 
 Through __facility__ parameter, You'll be able to use the right log file on rsyslog:
 
@@ -100,7 +102,9 @@ If no test/config.json file is found, defaults will be used.
         "host": "localhost",
         "port": "514",
         "facility": "0",
-        "protocol": "U"
+        "protocol": "U",
+        "hostname": "localhost",
+        "tag": "MyApp"
       }
     } 
   }

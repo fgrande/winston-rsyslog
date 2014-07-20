@@ -25,7 +25,9 @@ try {
     host: config.transports.rsyslog.host,
     port: config.transports.rsyslog.port,
     facility: config.transports.rsyslog.facility,
-    protocol: config.transports.rsyslog.protocol
+    protocol: config.transports.rsyslog.protocol,
+    hostname: config.transports.rsyslog.localhost,
+    tag: config.transports.rsyslog.tag
   });
 }
 catch (ex) {

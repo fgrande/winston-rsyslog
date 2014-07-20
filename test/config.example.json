@@ -4,7 +4,9 @@
       "host": "localhost",
       "port": "514",
       "facility": "0",
-      "protocol": "U"
+      "protocol": "U",
+      "hostname": "localhost",
+      "tag": "MyApp"
     }
   }
 }
