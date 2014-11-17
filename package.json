@@ -21,7 +21,7 @@
   "dependencies": {
   },
   "peerDependencies": {
-    "winston": "~0.7.2"
+    "winston": "~0.8.3"
   },
   "devDependencies": {
     "winston": "0.7.x",
